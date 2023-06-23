@@ -1,77 +1,85 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Tabelas</title>
-    </head>
-    <body>
-        <h1>Tabelas</h1>
 
-        <!-- <table> -> Estrutura de uma tabela em HTML -->
-        <h2>Nomes</h2>
-        <table border="1px">
-            <tr>
-                <th>Nome</th>
-                <th>Idade</th>
-                <th>E-mail</th>
-            </tr>
-            <tr>
-                <td>Fernando</td>
-                <td>27 anos</td>
-                <td>fernando@email.com</td>
-            </tr>
-        </table>
+<head>
+    <meta charset="UTF-8" />
+    <title>Tabelas</title>
+</head>
 
-        <h2>Tabuada Soma 2</h2>
-        <table border="1">
-            <tr>
-                <th>Operação</th>
-                <th>Resultado</th>
-            </tr>
-            <tr>
-                <td>2 + 0 =</td>
-                <td>2</td>
-            </tr>
-            <tr>
-                <td>2 + 1 =</td>
-                <td>3</td>
-            </tr>
-            <tr>
-                <td>2 + 2 =</td>
-                <td>4</td>
-            </tr>
-            <tr>
-                <td>2 + 3 =</td>
-                <td>5</td>
-            </tr>
-            <tr>
-                <td>2 + 4 =</td>
-                <td>6</td>
-            </tr>
-            <tr>
-                <td>2 + 5 =</td>
-                <td>7</td>
-            </tr>
-            <tr>
-                <td>2 + 6 =</td>
-                <td>8</td>
-            </tr>
-            <tr>
-                <td>2 + 7 =</td>
-                <td>9</td>
-            </tr>
-            <tr>
-                <td>2 + 8 =</td>
-                <td>10</td>
-            </tr>
-            <tr>
-                <td>2 + 9 =</td>
-                <td>11</td>
-            </tr>
-        </table>
+<body>
+    <h1>Tabelas</h1>
 
-        <h2>Times de Futebol</h2>
-        <table border="1">
+    <!-- <table> -> Estrutura de uma tabela em HTML -->
+    <h2>Nomes</h2>
+    <table border="1px">
+        <colgroup>
+            <col style="width: 200px; background-color: blue;">
+            <col style="width: 100px">
+            <col sytle="width:  300px>">
+        </colgroup>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>E-mail</th>
+        </tr>
+        <tr>
+            <td>Fernando</td>
+            <td>27 anos</td>
+            <td>fernando@email.com</td>
+        </tr>
+    </table>
+
+    <h2>Tabuada Soma 2</h2>
+    <table border="1">
+        <tr>
+            <th>Operação</th>
+            <th>Resultado</th>
+        </tr>
+        <tr>
+            <td>2 + 0 =</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>2 + 1 =</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>2 + 2 =</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>2 + 3 =</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>2 + 4 =</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>2 + 5 =</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>2 + 6 =</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>2 + 7 =</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>2 + 8 =</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>2 + 9 =</td>
+            <td>11</td>
+        </tr>
+    </table>
+
+    <h2>Times de Futebol</h2>
+    <table border="1">
+        <thead>
             <tr>
                 <th colspan="4">Classificação times no Brasileirão</th>
             </tr>
@@ -81,6 +89,8 @@
                 <th>Saldo de Gols</th>
                 <th>Vitórias</th>
             </tr>
+        </thead>
+        <tbody>
             <tr>
                 <td>Fluminense</td>
                 <td>20</td>
@@ -104,15 +114,15 @@
                 <td>90</td>
                 <td>30</td>
             </tr>
+        </tbody>
+        <tfoot>
             <tr>
                 <td colspan="4">
-                    <a
-                        href="https://brasileiraoassai.com.br/tabela-times"
-                        target="_blank"
-                        >Acesse nosso site.</a
-                    >
+                    <a href="https://brasileiraoassai.com.br/tabela-times" target="_blank">Acesse nosso site.</a>
                 </td>
             </tr>
-        </table>
-    </body>
+        </tfoot>
+    </table>
+</body>
+
 </html>
