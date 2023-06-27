@@ -8,41 +8,72 @@
 
 <body>
     <h1>Formulários</h1>
+    <!-- <form> -> Estrutura base de um formulário HTML -->
+    <!-- <input type="text"> -> Define um campo no formulário -->
+    <!-- <button> -> Botão -->
     <form>
         Nome:
-        <input type="text"> <br>
+        <input type="text" name="nome"> <br>
         E-mail:
-        <input type="email"> <br>
+        <input type="email" name="email" placeholder="email@examplo.com.br"> <br>
         Senha:
-        <input type="password"> <br>
+        <input type="password" name="senha"> <br>
         Idade:
-        <input type="number"> <br>
+        <input type="number" name="idade" min="0" max="100"> <br>
+        Horário de Registro:
+        <input type="time" value="15:00" disabled name="horario"> <br>
         Data de nascimento:
-        <input type="date">
+        <input type="date" name="dataNascimento" min="2023-06-26" max="2023-07-26"> <br>
         Telefone:
-        <input type="tel"> <br>
+        <input type="tel" name="telefone"> <br>
         URL da foto:
-        <input type="url"> <br>
+        <input type="url" name="foto"> <br>
         Frente do RG:
-        <input type="file" accept=".png, .jpg" size="50000" multiple> <br>
+        <input type="file" name="rg" accept=".png, .jpg" size="50000" multiple> <br>
         Escolha sua cor favorita:
-        <input type="color"> <br>
+        <input type="color" name="cor" value="#FF00FF
+        "> <br>
         Estado civil: <br>
-        Solteiro <input type="radio" name="estado-civil"> <br>
-        Casado <input type="radio" name="estado-civil"> <br>
-        Aceito os termos de uso: <input type="checkbox"> <br>
-        Nível do Inglês: 1 <input type="range" kin="1" max="5" step=""> <br>
+        Solteiro <input type="radio" name="estado-civil" value="solteiro"> <br>
+        Casado <input type="radio" name="estado-civil" value="casado"> <br>
+        Aceito os termos de uso: <input type="checkbox" name="termos-uso"> <br>
+        Nível do Inglês: 1 <input type="range" name="nivel-ingles" min="1" max="5" step="0.5"> 5 <br>
         Estado:
-        <select>
+        <select name="estado">
             <option disabled selected>Selecione um estado</option>
             <option>Ceará</option>
             <option>São Paulo</option>
             <option>Rio de Janeiro</option>
         </select> <br>
         Fale um pouco sobre você: <br>
-        <textarea></textarea> <br>
-        <button>Enviar</button>
+        <textarea cols="30" rows="3" placeholder="Digite sua descrição"></textarea> <br>
+
+        <!-- 
+            button -> Botão comum (auxlia na execução de um evento javascript)
+            submit -> Submete as informações do formulário
+            reset -> Limpar os campos de um formulário
+        -->
+        <button type="button">Não Faz Nada</button>
+        <button type="reset">Limpar</button>
+        <button type="submit">Enviar</button>
+        <br>
+        <input type="button" value="Não Faz Nada">
+        <input type="reset" value="Limpar">
+        <input type="submit" value="Enviar">
     </form>
+
+    <!-- 
+        placeholder -> Define um texto explicativo para o campo
+        name -> Indica uma identificação para a informação no envio do formulário
+        value -> Indica o valor do campo
+        disabled -> Habilita/Desabilita um campo
+        min -> Define um numero minimo para campos numericos
+        max -> Define um numero máximo para campos numericos
+        minLength -> Minimo de caracteres
+        maxLength -> Maximo de caracteres
+        pattern -> Define um padrão/modelo da informação
+        required -> Define um campo obrigatório
+    -->
 </body>
 
 </html>
