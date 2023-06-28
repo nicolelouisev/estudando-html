@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <title>Layout de Página</title>
 </head>
-
 <body>
-    <h1>Layout de Página</h1>
+    <header>
+        <h1>Layout da Página</h1>
+        <nav>
+            <a href="">Sobre</a>
+            <a href="">Contato</a>
+            <a href="">Login</a>
+        </nav>
+    </header>
 
-    <!-- 
+    <main>
+        <!-- 
         SEO Search Engine Optimization
         <header> -> Estrutura o cabeçalho da página
         <main> -> Estrutura o corpo principal da página
@@ -19,53 +25,95 @@
         <section> -> Seção da página, que pode identificar várias seções com conteúdos diversos na página
         <article> -> É aplicado dentro da section, definindo artigo na página
         <div> -> Um container de elementos genéricos
-    -->
+        -->
 
-    <h2>Cadastro de Super Herói</h2>
+        <section>
+            <h2 title="cabeçalho">Cadastro de Super Herói</h2>
+            <form action="" method="post">
+                <!--
+                GET -> Enviar pela url
+                POST -> Envia pelo pacote da requisição (fica escondido)
+                -->
+                <fieldset>
+                    <legend>Informações pessoais</legend>
 
-    <form action="" method="get">
-        <!--
-    GET -> Enviar pela url
-    POST -> Envia pelo pacote da requisição (fica escondido)
-    -->
-        <fieldset>
-            <legend>Informações pessoais</legend>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" maxlength="100" required>
+                    <br>
 
-            <label for="nome">Nome:</label>
-            <input type="text" name="nome" id="nome" maxlength="100" required>
-            <br>
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" maxlength="200" required>
+                    <br>
 
-            <label for="email">E-mail:</label>
-            <input type="email" name="email" id="email" maxlength="200" required>
-            <br>
+                    <label for="poderes">Poderes:</label>
+                    <input type="text" name="poderes" id="poderes" maxlength="500" required
+                        placeholder="Digite seus poderes separados por vírgula">
+                    <br>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Informações de endereço</legend>
+                    <label for="rua">Rua:</label>
+                    <input type="text" name="rua" id="rua" maxlength="150" required>
+                    <br>
 
-            <label for="poderes">Poderes:</label>
-            <input type="text" name="poderes" id="poderes" maxlength="500" required
-                placeholder="Digite seus poderes separados por vírgula">
-            <br>
-        </fieldset>
-        <br>
-        <fieldset>
-            <legend>Informações de endereço</legend>
-            <label for="rua">Rua:</label>
-            <input type="text" name="rua" id="rua" maxlength="150" required>
-            <br>
+                    <label for="numero">Número:</label>
+                    <input type="text" name="numero" id="numero" maxlength="10" required>
+                    <br>
 
-            <label for="numero">Número:</label>
-            <input type="text" name="numero" id="numero" maxlength="10" required>
-            <br>
+                    <label for="estado">UF:</label>
+                    <input type="text" name="estado" id="estado" maxlength="2" required>
+                    <br>
 
-            <label for="estado">UF:</label>
-            <input type="text" name="estado" id="estado" maxlength="2" required>
-            <br>
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" name="cidade" id="cidade" maxlength="100" required>
+                    <br>
+                </fieldset>
 
-            <label for="cidade">Cidade:</label>
-            <input type="text" name="cidade" id="cidade" maxlength="100" required>
-            <br>
-        </fieldset>
+                <button>Enviar</button>
+            </form>
+        </section>
+        
+        <section>
+            <h2>Artigos</h2>
+            <article>
+                <h3>Artigo 1</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sapiente officia rerum totam, maiores voluptatum voluptatibus atque, molestiae nostrum architecto illo quae?
+                </p>
+            </article>
 
-        <button>Enviar</button>
-    </form>
+            <article>
+                <h3>Artigo 2</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sapiente officia rerum totam, maiores voluptatum voluptatibus atque, molestiae nostrum architecto illo quae?
+                </p>
+            </article>
+
+            <article>
+                <h3>Artigo 3</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sapiente officia rerum totam, maiores voluptatum voluptatibus atque, molestiae nostrum architecto illo quae?
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <aside>
+        <div>
+            <div>
+                <div>
+                    <div>
+                        Lateral
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <footer>
+        &copy; Todos os direitos reservados SoulColde Academy e Porto Seguro
+    </footer>
+
 </body>
-
 </html>
